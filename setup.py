@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 import conf
 
@@ -12,6 +12,7 @@ attrs['name'] = attrs['pypi_name']
 
 
 setup(
+ packages=find_packages(),
  py_modules=['imp'],
  install_requires=[],
  **attrs
